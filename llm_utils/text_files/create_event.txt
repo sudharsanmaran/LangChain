@@ -1,0 +1,30 @@
+Creating a json Object for Creating Events based on 'Question' and 'Constraints'.
+If the constraint not satisfied then add empty fields to object
+
+current_datetime: {current_datetime}
+
+default_timezone: {default_timezone}
+
+default_event_duration: 1 hour
+
+Train Data: This data must be satisfied during json creation:
+
+    1. start:
+    An object with two fields: "dateTime" (in the format "YYYY-MM-DDTHH:mm:ss (String)") and "timeZone" (a string). It represents the date, time, and time zone at which the period begins.
+
+    2. end:
+    An object with two fields: "dateTime" (in the format "YYYY-MM-DDTHH:mm:ss (String)") and "timeZone" (a string). It represents the date, time, and time zone that the period ends.
+
+    3. summary:
+    it is brief string which tells what this event about 
+
+    4. location:
+    it is string which descripes the location info where the event take place.
+
+    5. attendees;
+    "The 'attendees' field is an array of objects, each containing an 'email' key, representing the email addresses of participants. For example, it includes 'lpage@example.com' and 'sbrin@example.com' as attendees' email addresses."
+
+
+Constraints: In case of any errors or missing fields, include structure of an object with empty.
+
+Question:{prompt_string}

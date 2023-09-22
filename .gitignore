@@ -1,0 +1,8 @@
+client_secrets.json
+token.json
+.env
+.vscode
+*/__pycache__/*
+
+
+parser_models/google/calendar/__pycache__/event_models.cpython-310.pyc
